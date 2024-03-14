@@ -4,7 +4,6 @@
 first_number = float(input("What's the first number? "))
 second_number = float(input("What's the second number? "))
 
-is_multiple = first_number % second_number == 0
 not_multiple = first_number % second_number > 0
 
 if not_multiple:

@@ -1,13 +1,9 @@
-# This program checks if the user's answer is either true or false.
-# if the user's answer is true and prints "Whoala" if it is.
+# This program checks the user's answer is either true or false.
+# if the user's answer is true prints "Whoala".
 
-def check_answer():
-    answer = int(input("What is the smallest integer divisible by 8 starting from 100? ")) == 104
+answer = input("What is your answer? (true/false) ")
 
-    if answer is True:
-        print("Whoala")
-    else:
-        print("Wrong")
-
-
-check_answer()
+if answer == "true":
+    print("Whoala")
+else:
+    print("Wrong")
