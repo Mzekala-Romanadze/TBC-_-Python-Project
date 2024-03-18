@@ -1,28 +1,11 @@
-# This program gets a positive integer from the user
-# and prints horizontally all divisors of the number.
+# This program gets a positive integer n in range 0-1000
+# from the user and prints horizontally all divisors of the number.
 
+n = int(input("Enter a positive integer in range 0-1000: "))
 
-def get_positive_integer():
-    while True:
-        try:
-            get_number = int(input("Enter a positive integer: "))
-            if 0 < get_number < 1000:
-                return get_number
-            else:
-                print("Enter a positive integer in range 0-1000.")
-        except ValueError:
-            print("Enter a positive integer in range 0-1000.")
-
-
-def get_divisors():
-    # List that contains all divisors of the number.
-    divisors = []
-    for i in range(1, number + 1):
-        if number % i == 0:
-            divisors.append(i)
-    return divisors
-
-
-number = get_positive_integer()
-divisor = get_divisors()
-print(f"The divisors of {number} are: {', '.join(map(str, divisor))}")
+if 0 < n < 1000:
+    for i in range(1, n + 1):
+        if n % i == 0:
+            print(i, end=" ")
+else:
+    print("Enter a positive integer in range 0-1000.")
