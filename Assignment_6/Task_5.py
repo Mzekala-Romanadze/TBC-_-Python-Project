@@ -15,14 +15,14 @@ n = int(input("Enter a positive integer in range 0-10: "))
 if 0 < n < 10:
     i = 0
     while i <= n:
-        print(" " * (n - i), end="")
+        print(" " * (n - i) * 2, end=" ")
         j = i
         while j >= 0:
-            print(j, end="")
+            print(j, end=" ")
             j -= 1
         j = 1
         while j <= i:
-            print(j, end="")
+            print(j, end=" ")
             j += 1
         print()
         i += 1
