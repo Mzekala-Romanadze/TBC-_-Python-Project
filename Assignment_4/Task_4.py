@@ -1,36 +1,21 @@
-# This program gets a positive integer from the user
-# and calculates the nth term in the sequence where the first term is 1,
+# This program gets a positive integer n in range 0-20 from the user
+# and finds the nth term in the sequence where the first term is 1,
 # the null term is 0 and each next term is the sum
 # of the previous two terms.
 
+n = int(input("Enter a positive integer in range 0-20: "))
 
-def get_integer():
-    while True:
-        try:
-            number = int(input("Enter a positive integer: "))
-            if 0 <= number < 20:
-                return number
-            else:
-                print("Enter a positive integer from 1 to 20.")
-        except ValueError:
-            print("Enter a positive integer from 1 to 20.")
-
-
-def nth_term():
-    prev_term1, prev_term2 = 1, 0
-    current_term = []
-    for _ in range(2, n + 1):
-        current_term = prev_term1 + prev_term2
-        prev_term2 = prev_term1
-        prev_term1 = current_term
-    return current_term
-
-
-n = get_integer()
-term = nth_term()
-if n == 0:
-    print("The 0th term in the sequence is 0.")
-elif n == 1:
-    print("The 1st term in the sequence is 1.")
+if 0 <= n < 20:
+    if n == 0:
+        print("The 0th term is: ", 0)
+    else:
+        zero_term = 0
+        first_term = 1
+        current_term = 1
+        for i in range(1, n):
+            current_term = zero_term + first_term
+            zero_term = first_term
+            first_term = current_term
+        print(f"The {n}th term is: ", current_term)
 else:
-    print(f"The {n}th term in the sequence is: {term}")
+    print("Enter a positive integer in range 0-20.")
