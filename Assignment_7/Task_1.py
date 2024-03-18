@@ -7,13 +7,13 @@
 n = int(input("Enter a positive integer in range 0-20: "))
 
 if 0 <= n < 20:
-    null_member = 0
-    first_member = 1
+    zero_term = 0
+    first_term = 1
     print("The terms in a sequence from 0 to", n, "are: ")
-    print(null_member, end=" ")
-    while n > 1:
-        print(first_member, end=" ")
-        null_member, first_member = first_member, null_member + first_member
+    print(zero_term, end=" ")
+    while n + 1 > 1:
+        print(first_term, end=" ")
+        zero_term, first_term = first_term, zero_term + first_term
         n -= 1
 else:
     print("Please, enter a positive integer in range 0-20")
