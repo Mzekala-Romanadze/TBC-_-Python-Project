@@ -1,24 +1,20 @@
-# This program gets a positive integer from the user
+# This program gets a positive integer n from the user
 # and randomly generates integer(s) from the range 0-1000
 # as many as the number the user input.
-# The program prints the maximum number from them.
+# The program prints the highest number from them.
 
 import random
 
-quantity = int(input("How many integers do you want to generate? (Choose number from 1 to 30) "))
+n = int(input("How many integers do you want to generate? (Choose number from 1 to 30) "))
 
-
-def get_integer():
-    number = []
-    for i in range(quantity):
-        n = random.randint(0, 1000)
-        number.append(n)
-    return number
-
-
-if quantity <= 0 or quantity > 30:
-    print("Enter positive integer in range 0-30.")
+if 0 < n < 30:
+    print("The generated numbers are: ")
+    maximum = 0
+    for i in range(n):
+        random_number = random.randint(0, 1000)
+        print(random_number)
+        if random_number > maximum:
+            maximum = random_number
+    print("The highest number generated is:", maximum)
 else:
-    result = get_integer()
-    print(result)
-    print(max(result))
+    print("Enter positive integer in range 0-30.")
