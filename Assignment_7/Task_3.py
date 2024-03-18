@@ -7,14 +7,13 @@ n = int(input("Enter a positive integer in range 0-10000: "))
 
 if 0 <= n < 10000:
     print("The number the user entered is:", n)
-    inverse_number = 0
+    print("The inverse number is: ", end="")
     digits_sum = 0
     while n > 0:
         digit = n % 10
-        inverse_number = inverse_number * 10 + digit
+        print(digit, end="")
         digits_sum += digit
         n //= 10
-    print("The inverse number is", inverse_number, end=".\n")
-    print("The sum of its digits is", digits_sum, end=".")
+    print("\n" "The sum of its digits is:", digits_sum)
 else:
     print("Please, enter a positive integer in range 0-10000")
