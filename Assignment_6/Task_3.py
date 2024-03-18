@@ -20,9 +20,9 @@ while i < MAX_TRIES + 1:
             print("Game Over! Computer is the winner!", "The number was ", number)
             break
         if answer > number:
-            print("Low")
+            print("HIGH")
             answer = int(input("Try again "))
         if answer < number:
-            print("High")
+            print("LOW")
             answer = int(input("Try again "))
     i += 1
