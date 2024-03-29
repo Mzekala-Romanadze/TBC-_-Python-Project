@@ -33,6 +33,7 @@ if action == "e":
             output_text += ROW_3_LETTERS[output_index]
         else:
             output_text += c
+
     print("Encrypted text is:", output_text)
 elif action == "d":
     output_text = ""
@@ -51,6 +52,7 @@ elif action == "d":
             output_text += ROW_3_LETTERS[output_index]
         else:
             output_text += c
+
     print("Decrypted text is:", output_text)
 else:
     print("Incorrect action")

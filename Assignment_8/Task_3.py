@@ -14,13 +14,16 @@ while c < len(user_input):
     # print(user_input[c], end="")
     if c == 0:
         first_letter += user_input[c]
+
     if c == len(user_input) - 1:
         last_letter += user_input[c]
+
     if len(user_input) % 2 == 0:
         if c == len(user_input) // 2 - 1:
             middle_letter += user_input[c]
         if c == len(user_input) // 2:
             middle_letter += user_input[c]
+
     if len(user_input) % 2 > 0 and c == len(user_input) // 2:
         middle_letter += user_input[c]
     c += 1
