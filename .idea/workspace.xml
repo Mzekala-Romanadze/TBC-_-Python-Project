@@ -48,12 +48,11 @@
     "Python.Task_3_ver_2.executor": "Run",
     "Python.Task_4.executor": "Run",
     "Python.Task_5.executor": "Run",
-    "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "StatusDashboardGroupingRule": "true",
     "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "Day__9"
+    "git-widget-placeholder": "Day__8"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
