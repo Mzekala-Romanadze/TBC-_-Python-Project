@@ -5,14 +5,7 @@
 #            Input b: tops
 #            Output: Yes
 
-
-def character_rotations(text):
-    rotations = []
-    length = len(text)
-    for i in range(length + 1):
-        rotated_text = text[length - i:] + text[:length - i]
-        rotations.append(rotated_text)
-    return rotations
+from Task_1 import character_rotations
 
 
 def check_rotation(string_a, string_b):
