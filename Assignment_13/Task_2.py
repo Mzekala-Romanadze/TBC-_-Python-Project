@@ -1,10 +1,10 @@
 # This program gets an integer from the user
 # and checks if it is prime number.
 # The program also includes 2 examples to demonstrate
-# working of check_number function.
+# working of is_prime_number function.
 
 
-def check_number(a):
+def is_prime_number(a):
     divisors = 0
     i = 0
     while i < a + 1:
@@ -12,7 +12,7 @@ def check_number(a):
         if a % i == 0:
             divisors += 1
     if divisors > 2:
-        return None
+        return False
     else:
         return a
 
@@ -24,8 +24,8 @@ def main():
     elif a < 2:
         print("Please, enter positive integer. ")
     else:
-        checked_num = check_number(a)
-        if checked_num is not None:
+        checked_num = is_prime_number(a)
+        if checked_num is not False:
             print(f"The number {a} is prime number")
         else:
             print(f"The number {a} is not prime number")
@@ -34,15 +34,15 @@ def main():
         example_1 = 11  # Prime number
         example_2 = 30  # Not prime number
 
-        checked_example_1 = check_number(example_1)
-        checked_example_2 = check_number(example_2)
+        checked_example_1 = is_prime_number(example_1)
+        checked_example_2 = is_prime_number(example_2)
 
-        if checked_example_1 is not None:
+        if checked_example_1 is not False:
             print(f"Example #1: the number {example_1} is prime number")
         else:
             print(f"Example #1: the number {example_1} is not prime number")
 
-        if checked_example_2 is not None:
+        if checked_example_2 is not False:
             print(f"Example #2: the number {example_2} is prime number")
         else:
             print(f"Example #2: the number {example_2} is not prime number")
