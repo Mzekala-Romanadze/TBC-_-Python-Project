@@ -3,3 +3,4 @@
 /.venv/Scripts/pythonw.exe
 /.idea/misc.xml
 /.venv
+/.pyc
