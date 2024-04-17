@@ -1,5 +1,2 @@
 .idea/
-/.venv/Scripts/python.exe
-/.venv/Scripts/pythonw.exe
 /.idea/misc.xml
-/.pyc
