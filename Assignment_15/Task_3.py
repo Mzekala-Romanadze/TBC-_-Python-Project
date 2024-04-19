@@ -3,11 +3,8 @@
 
 
 def remove_extra(my_list):
-    new_list = []
-    for c in my_list:
-        if len(c) <= 3:
-            new_list.append(c.upper())
-    return new_list
+    new_list = list(filter(lambda c: len(c) <= 3, my_list))
+    return [c.upper() for c in new_list]
 
 
 def main():
