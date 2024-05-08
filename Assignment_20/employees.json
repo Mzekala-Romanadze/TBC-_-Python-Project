@@ -1,0 +1,80 @@
+{
+    "HR": [
+        {
+            "name": "Blue",
+            "salary": 7551
+        },
+        {
+            "name": "Eve",
+            "salary": 3546
+        },
+        {
+            "name": "Barbara",
+            "salary": 3459
+        },
+        {
+            "name": "Eve",
+            "salary": 3765
+        }
+    ],
+    "IT": [
+        {
+            "name": "Barbara",
+            "salary": 6247
+        },
+        {
+            "name": "Katara",
+            "salary": 4669
+        }
+    ],
+    "Finance": [
+        {
+            "name": "Rafael",
+            "salary": 1655
+        },
+        {
+            "name": "Victoria",
+            "salary": 7725
+        }
+    ],
+    "Marketing": [
+        {
+            "name": "Sky",
+            "salary": 4506
+        },
+        {
+            "name": "Barbara",
+            "salary": 7456
+        },
+        {
+            "name": "Emma",
+            "salary": 2627
+        },
+        {
+            "name": "Eve",
+            "salary": 4502
+        },
+        {
+            "name": "Blue",
+            "salary": 4729
+        }
+    ],
+    "Operations": [
+        {
+            "name": "Sky",
+            "salary": 2876
+        },
+        {
+            "name": "Victoria",
+            "salary": 6724
+        },
+        {
+            "name": "Sky",
+            "salary": 7789
+        },
+        {
+            "name": "Sky",
+            "salary": 3220
+        }
+    ]
+}
