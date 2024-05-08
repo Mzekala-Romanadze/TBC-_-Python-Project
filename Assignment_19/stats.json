@@ -1,0 +1,32 @@
+{
+    "max_products_customer": [
+        [
+            [
+                "Rafael",
+                "Mango"
+            ],
+            10
+        ],
+        [
+            [
+                "Blue",
+                "Mango"
+            ],
+            10
+        ]
+    ],
+    "max_price_customer": [
+        [
+            [
+                "Victoria",
+                "Lime"
+            ],
+            9.42
+        ]
+    ],
+    "mean_price": 5.545714285714287,
+    "mean_quantity": 5.857142857142857,
+    "max_sold_product": [
+        "Mango"
+    ]
+}
