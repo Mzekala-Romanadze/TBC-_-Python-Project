@@ -6,6 +6,8 @@
 # The sequence ends when its term reaches 1.
 # The problem is solved by 2 functions (without and with caching) to generate the sequence.
 
+cache = {}
+
 
 def generate_sequence(n):
     sequence = [n]
@@ -19,7 +21,7 @@ def generate_sequence(n):
 
 
 def generate_sequence_with_cache(n):
-    cache = {}
+    global cache
     if n in cache:
         return cache[n]
 
@@ -31,7 +33,7 @@ def generate_sequence_with_cache(n):
             n = 3 * n + 1
         sequence.append(n)
 
-    cache[n] = sequence
+    cache[sequence[0]] = sequence
     return sequence
 
 
