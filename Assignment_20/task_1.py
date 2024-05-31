@@ -10,59 +10,51 @@
 #                }
 
 import json
-import random
 
 
-def generate_random_json(json_random_file, departments, employees):
-    data = {}
-    for department in departments:
-        num_employees = random.randint(2, 6)
-        data[department] = []
-        for _ in range(num_employees):
-            data[department].append(
-                {
-                    'name': random.choice(employees),
-                    'salary': random.randint(1000, 8000)
-                })
-
-    with open(json_random_file, 'w') as file:
-        json.dump(data, file, indent=4)
+def read_json_file(input_file):
+    try:
+        with open(input_file, 'r') as file:
+            data = json.load(file)
+            return data
+    except FileNotFoundError:
+        print("The input JSON file does not exist.")
+        exit()
 
 
-def calculate_avg_salary(data):
-    avg_salaries = {}
-    for department, employees in data.items():
-        salaries = [employee['salary'] for employee in employees]
-        avg_salaries[department] = sum(salaries) / len(salaries)
-    return avg_salaries
+def calculate_average_salary(department):
+    salaries = []
+    for employee in department.get('employees', []):
+        try:
+            salary = float(employee['salary'])
+            salaries.append(salary)
+        except ValueError:
+            salary = employee['salary']
+            if salary == "None":
+                salaries.append(0)
+    if salaries:
+        return sum(salaries) / len(salaries)
+    else:
+        return 0
+
+
+def create_new_file(data, output_file):
+    average_salaries = {}
+
+    for _, department in data.items():
+        average_salary = calculate_average_salary(department)
+        average_salaries[department["name"]] = average_salary
+
+    with open(output_file, 'w') as file:
+        json.dump(average_salaries, file, indent=4)
 
 
 def main():
-    json_random_file = 'employees.json'
-    avg_salary_file = 'avg_salary.json'
-    departments = ['HR', 'IT', 'Finance', 'Marketing', 'Operations']
-    employees = ["Sky", "Emma", "Elena", "Alice", "Barbara", "Sebastian",
-                 "Rafael", "Tomas", "Eve", "Victoria", "Darla", "Blue",
-                 "Alexander", "Katara"]
+    input_file = 'employees.json'
+    output_file = 'avg_salary.json'
 
-    generate_random_json(json_random_file, departments, employees)
-    with open(json_random_file) as file:
-        data = json.load(file)
-
-    try:
-        with open(json_random_file) as file:
-            data = json.load(file)
-    except FileNotFoundError:
-        print("The JSON file does not exist")
-        return
-
-    avg_salaries = calculate_avg_salary(data)
-
-    for department, avg_salary in avg_salaries.items():
-        print(f"Average salary for {department}: {avg_salary}")
-
-    with open(avg_salary_file, 'w') as file:
-        json.dump(avg_salaries, file, indent=4)
+    input_file_data = read_json_file(input_file)
+    create_new_file(input_file_data, output_file)
 
 
 if __name__ == "__main__":

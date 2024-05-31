@@ -1,7 +1,5 @@
 {
-    "HR": 4580.25,
-    "IT": 5458.0,
-    "Finance": 4690.0,
-    "Marketing": 4764.0,
-    "Operations": 5152.25
+    "Department 1": 120.0,
+    "Department 2": 100.0,
+    "Department 3": 0
 }

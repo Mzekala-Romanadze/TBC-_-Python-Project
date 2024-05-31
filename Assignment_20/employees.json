@@ -1,80 +1,69 @@
 {
-    "HR": [
-        {
-            "name": "Blue",
-            "salary": 7551
-        },
-        {
-            "name": "Eve",
-            "salary": 3546
-        },
-        {
-            "name": "Barbara",
-            "salary": 3459
-        },
-        {
-            "name": "Eve",
-            "salary": 3765
-        }
-    ],
-    "IT": [
-        {
-            "name": "Barbara",
-            "salary": 6247
-        },
-        {
-            "name": "Katara",
-            "salary": 4669
-        }
-    ],
-    "Finance": [
-        {
-            "name": "Rafael",
-            "salary": 1655
-        },
-        {
-            "name": "Victoria",
-            "salary": 7725
-        }
-    ],
-    "Marketing": [
-        {
-            "name": "Sky",
-            "salary": 4506
-        },
-        {
-            "name": "Barbara",
-            "salary": 7456
-        },
-        {
-            "name": "Emma",
-            "salary": 2627
-        },
-        {
-            "name": "Eve",
-            "salary": 4502
-        },
-        {
-            "name": "Blue",
-            "salary": 4729
-        }
-    ],
-    "Operations": [
-        {
-            "name": "Sky",
-            "salary": 2876
-        },
-        {
-            "name": "Victoria",
-            "salary": 6724
-        },
-        {
-            "name": "Sky",
-            "salary": 7789
-        },
-        {
-            "name": "Sky",
-            "salary": 3220
-        }
+  "department_1": {
+    "name": "Department 1",
+    "description": "This is the first department",
+    "employees": [
+      {
+        "name": "John Doe",
+        "position": "Software Engineer",
+        "salary": "100"
+      },
+      {
+        "name": "Jane Doe",
+        "position": "Architect",
+        "salary": "140"
+      },
+      {
+        "name": "Jim Doe",
+        "position": "Junior java engineer",
+        "salary": "120"
+      },
+      {
+        "name": "Jill Doe",
+        "position": "Senior Python Engineer",
+        "salary": "110"
+      },
+      {
+        "name": "Jack Doe",
+        "position": "Senior Java Engineer",
+        "salary": "130"
+      }
     ]
+  },
+  "department_2": {
+    "name": "Department 2",
+    "description": "This is the second department",
+    "employees": [
+      {
+        "name": "John Doe",
+        "position": "Software Engineer",
+        "salary": "None"
+      },
+      {
+        "name": "Jane Doe",
+        "position": "Architect",
+        "salary": "140"
+      },
+      {
+        "name": "Jim Doe",
+        "position": "Junior java engineer",
+        "salary": "120"
+      },
+      {
+        "name": "Jill Doe",
+        "position": "Senior Python Engineer",
+        "salary": "110"
+      },
+      {
+        "name": "Jack Doe",
+        "position": "Senior Java Engineer",
+        "salary": "130"
+      }
+    ]
+  },
+  "department_3": {
+    "name": "Department 3",
+    "description": "This is the third department",
+    "employees": []
+  }
 }
