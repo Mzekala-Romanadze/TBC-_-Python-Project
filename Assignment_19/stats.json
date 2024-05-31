@@ -1,32 +1,17 @@
 {
-    "max_products_customer": [
-        [
-            [
-                "Rafael",
-                "Mango"
-            ],
-            10
-        ],
-        [
-            [
-                "Blue",
-                "Mango"
-            ],
-            10
-        ]
+    "Customer(s) who purchased maximum amount of products": [
+        "Rafael",
+        "Blue"
     ],
-    "max_price_customer": [
-        [
-            [
-                "Victoria",
-                "Lime"
-            ],
-            9.42
-        ]
+    "Maximum amount purchased by 1 customer": 10,
+    "Customer(s) who made maximum payment": [
+        "Victoria"
     ],
-    "mean_price": 5.545714285714287,
-    "mean_quantity": 5.857142857142857,
-    "max_sold_product": [
+    "Maximum purchase payment": 65.94,
+    "Mean of purchase prices": 5.348292682926829,
+    "Mean of purchase amount": 5.857142857142857,
+    "Bestseller product": [
         "Mango"
-    ]
+    ],
+    "Amount of sold bestseller product": 20
 }
