@@ -18,7 +18,7 @@ class Employee:
     def __init__(self, name, position, salary):
         self.name = name
         self.position = position
-        self.salary = int(salary)
+        self.salary = float(salary)
 
 
 class Department:
@@ -30,18 +30,18 @@ class Department:
     def average(self):
         if not self.employees:
             return 0
-        total_salary = sum(employee.salary for employee in self.employees)
+        total_salary = sum([employee.salary for employee in self.employees])
         return total_salary / len(self.employees)
 
     def max(self):
         if not self.employees:
             return 0
-        return max(employee.salary for employee in self.employees)
+        return max([employee.salary for employee in self.employees])
 
     def min(self):
         if not self.employees:
             return 0
-        return min(employee.salary for employee in self.employees)
+        return min([employee.salary for employee in self.employees])
 
     def positions(self):
         position_count = {}
@@ -51,7 +51,7 @@ class Department:
             else:
                 position_count[employee.position] = 1
 
-        if not bool(position_count):
+        if not position_count:
             position_count = {"No active positions": 0}
 
         return position_count
