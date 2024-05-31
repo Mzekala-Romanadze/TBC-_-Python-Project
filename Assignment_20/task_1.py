@@ -20,6 +20,10 @@ def read_json_file(input_file):
     except FileNotFoundError:
         print("The input JSON file does not exist.")
         exit()
+    except json.decoder.JSONDecodeError:
+        print("The file is empty.")
+        exit()
+
 
 
 def calculate_average_salary(department):
