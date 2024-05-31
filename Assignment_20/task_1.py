@@ -25,7 +25,6 @@ def read_json_file(input_file):
         exit()
 
 
-
 def calculate_average_salary(department):
     salaries = []
     for employee in department.get('employees', []):
