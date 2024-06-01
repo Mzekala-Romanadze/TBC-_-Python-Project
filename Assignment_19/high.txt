@@ -1,0 +1,12 @@
+Sky, Avocado, 4, 4.87
+Emma, Sweet potatoes, 9, 5.06
+Elena, Avocado, 6, 2.58
+Alice, Cherry, 8, 7.57
+Barbara, Cherry, 3, 5.96
+Sebastian, Orange, 7, 8.68
+Rafael, Mango, 10, 3.69
+Tomas, Avocado, 2, 6.93
+Victoria, Lime, 7, 9.42
+Blue, Mango, 10, 2.98
+Alexander, Orange, 8, 3.48
+Katara, Strawberry, 6, 5.62

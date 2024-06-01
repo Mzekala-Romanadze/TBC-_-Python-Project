@@ -1,0 +1,17 @@
+{
+    "Customer(s) who purchased maximum amount of products": [
+        "Rafael",
+        "Blue"
+    ],
+    "Maximum amount purchased by 1 customer": 10,
+    "Customer(s) who made maximum payment": [
+        "Victoria"
+    ],
+    "Maximum purchase payment": 65.94,
+    "Mean of purchase prices": 5.348292682926829,
+    "Mean of purchase amount": 5.857142857142857,
+    "Bestseller product": [
+        "Mango"
+    ],
+    "Amount of sold bestseller product": 20
+}
