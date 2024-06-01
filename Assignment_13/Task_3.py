@@ -6,8 +6,7 @@
 def reverse_text(text):
     if len(text) <= 1:
         return text
-    else:
-        return reverse_text(text[1:]) + text[0]
+    return reverse_text(text[1:]) + text[0]
 
 
 def main():
