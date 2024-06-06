@@ -4,9 +4,7 @@ TEMPERATURE = [22, 25, 19, 23, 25, 26, 23]
 
 
 def is_arithmetic_mean():
-    total = 0
-    for i in TEMPERATURE:
-        total += i
+    total = sum(TEMPERATURE)
     return total / len(TEMPERATURE)
 
 
