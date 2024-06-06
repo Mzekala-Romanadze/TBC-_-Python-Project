@@ -9,9 +9,12 @@ import json
 
 
 def open_json_files(file_name):
-    with open(file_name, "r") as file:
-        file_data = json.load(file)
-    return file_data
+    try:
+        with open(file_name, "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print(f"The {file_name} file does not exist.")
+        exit()
 
 
 def find_market(user_choice, recipes, markets):
