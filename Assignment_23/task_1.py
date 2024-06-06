@@ -25,7 +25,7 @@ class Inset:
         if element in self.unique_elements:
             self.unique_elements.remove(element)
         else:
-            print("Not found")
+            raise ValueError("Not found")
 
     def __str__(self):
         sorted_elements = sorted(self.unique_elements)
