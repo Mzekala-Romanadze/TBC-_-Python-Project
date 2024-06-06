@@ -15,35 +15,25 @@ def generate_random_numbers():
     return random_numbers
 
 
-def create_dictionary():
+def create_dictionary(random_numbers):
     even_odd_nums_dict = {"Even": 0, "Odd": 0}
-    random_numbers = generate_random_numbers()
-    print("Randomly generated numbers: ", random_numbers)  # For checking the result
 
-    even_numbers = []
-    even_numbers_counter = 0
-    odd_numbers = []
-    odd_numbers_counter = 0
-    for i in random_numbers:
-        if i % 2 == 0:
-            even_numbers.append(i)
-            even_numbers_counter += 1
+    for number in random_numbers:
+        if number % 2 == 0:
+            even_odd_nums_dict["Even"] += 1
         else:
-            odd_numbers.append(i)
-            odd_numbers_counter += 1
-
-    print("Even numbers: ", even_numbers)  # For checking the result
-    print("Odd numbers: ", odd_numbers)  # For checking the result
-
-    even_odd_nums_dict["Even"] = even_numbers_counter
-    even_odd_nums_dict["Odd"] = odd_numbers_counter
+            even_odd_nums_dict["Odd"] += 1
 
     return even_odd_nums_dict
 
 
 def main():
-    generated_dictionary = create_dictionary()
-    print(generated_dictionary)
+    random_numbers = generate_random_numbers()
+    generated_dictionary = create_dictionary(random_numbers)
+
+    print("Randomly generated numbers: ", random_numbers)
+    print("Even numbers: ", generated_dictionary["Even"])
+    print("Odd numbers: ", generated_dictionary["Odd"])
 
 
 if __name__ == "__main__":
