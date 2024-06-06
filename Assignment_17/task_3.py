@@ -13,12 +13,14 @@
 #       Mariam - Tornike
 #       Tornike - Mariam, Demetre
 
+KEYWORD = "FINISH"
+
 
 def get_friendships():
     friendships = {}
     while True:
-        user_input = input("Enter names of 2 people in format: 'Name 1 - Name 2' or 'FINISH' to end: ").split()
-        if user_input[0].upper() == 'FINISH':
+        user_input = input(f"Enter names of 2 people in format: 'Name 1 - Name 2' or {KEYWORD} to end: ").split()
+        if user_input[0].upper() == KEYWORD:
             break
         if len(user_input) != 3:
             print("Please, enter names in format: 'Name 1 - Name 2'")
